@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Atributos Globales</title>
+    <style>
+        .parrafo_1{
+            color: red
+        }
+    </style>
 </head>
 <body>
 <!--
@@ -14,10 +19,15 @@
 
 -->
 
-    <p>Classes</p>
-    <p>Identificador</p>
+    <p class="parrafo_1">Clases</p>
+    <p id="parrafo">Identificador</p>
     <p>Titulo con tooltip</p>
     <p>Datos pasados en la etiqueta</p>
+
+    <script>
+        const p = document.getElementById('parrafo')
+        console.log(p.textContent)
+    </script>
 
 </body>
 </html>
