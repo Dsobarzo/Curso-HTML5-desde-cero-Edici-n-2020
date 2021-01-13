@@ -3,9 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <title>Tablas</title>
+
+    <style>
+        td{
+            background-color: aqua;
+        }
+
+    </style>
 </head>
 
 <body>
+<!---
+    Las tablas en HTML sirven para mostar todo el contenido tabulado
+
+    La estructura basica de una tabla se compone de
+
+    table -> etiqueta que encierra una tabla
+    tr -> table row, eqtiqueta que contruye una fila
+    td -> table data, etiqueta que contruye una celda
+
+    Truco: el numeor de celdaas dentyro de un td establecera el numero de columnas de la tabla.
+-->
+
+    <h1>Tablas</h1>
+
+    <table>
+        <!--TITULO DE LA TABLA-->
+        <caption>HORARIO DE CLASES</caption>
+
+        <thead>
+        <tr>
+            <th></th>
+            <th>L</th>
+            <th>M</th>
+            <th>X</th>
+            <th>J</th>
+            <th>V</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>8:30 - 9:30</td>
+            <td>Matematicas</td>
+            <td>Matematicas</td>
+            <td>Sociales</td>
+            <td>Matematicas</td>
+            <td>Matematicas</td>
+        </tr>
+        <tr>
+            <td>9:30 - 10:25</td>
+            <td>Lengua</td>
+            <td>Lengua</td>
+            <td>Matematicas</td>
+            <td>ciencias</td>
+            <td>Lengua</td>
+        </tr>
+        <tr>
+            <td>10:25 - 11:20</td>
+            <td>Ed. Fisica</td>
+            <td>Ciencias</td>
+            <td>Lengua</td>
+            <td>Lengua</td>
+            <td>Ed. Fisica</td>
+        </tr>
+        <tr>
+            <td>11:20 - 11:45</td>
+            <td colspan="5">Recreo</td>
+        </tr>
+        <tr>
+            <td>11:45 - 12:40</td>
+            <td>Ingles</td>
+            <td>Sociales</td>
+            <td>Ingles</td>
+            <td>Tutoria</td>
+            <td>Ingles</td>
+        </tr>
+        <tr>
+            <td>12:40 - 13:35</td>
+            <td rowspan="2">Tecnologia</td>
+            <td>Ed. Fisica</td>
+            <td>Plastica</td>
+            <td>Religion</td>
+            <td>Musica</td>
+        </tr>
+        <tr>
+            <td>13:45 - 14:30</td>
+            <td>Frances</td>
+            <td>Tecnologia</td>
+            <td>Frances</td>
+            <td>Tecnologia</td>
+        </tr>
+        </tbody>
+        <TFOOT>
+        <TR>
+            <td colspan="5">Total de asignaturas</td>
+            <td>12 </td>
+        </TR>
+        </TFOOT>
+    </table>
+
 
 </body>
 </html>
