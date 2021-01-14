@@ -81,5 +81,74 @@
         <input type="text">
 
     </form>
+
+    <h2>Input de seleccion</h2>
+
+    <form>
+        <div>
+            <label>Seleccion 1
+                <input type="radio" name="seleccion" value="Seleccion_1">
+            </label>
+            <label>Seleccion 2
+                <input type="radio" name="seleccion" value="Seleccion_2">
+            </label>
+            <label>Seleccion 3
+                <input type="radio" name="seleccion" value="Seleccion_3">
+            </label>
+        </div>
+
+        <div>
+            <label> Check Box
+                <input type="checkbox">
+            </label>
+        </div>
+
+        <div>
+            <select name="lenguajes">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+            </select>
+        </div>
+        <div>
+            <select name="lenguajes" multiple>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+            </select>
+        </div>
+        <h2>Mascotas por Grupo</h2>
+        <div>
+            <select name="Mascotas">
+                <optgroup label="4 Patas">
+                <option value="Perro">Perro</option>
+                <option value="Gato">Gato</option>
+                <option value="Hasmter">Hasmter</option>
+                <option value="Conejo">Conejo</option>
+                </optgroup>
+                <optgroup label="Aves">
+                <option value="Loro">Loro</option>
+                <option value="Canario">Canario</option>
+                </optgroup>
+                <optgroup label="Otras">
+                <option value="Serpiente">Serpiente</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <h2>DataList</h2>
+        <div>
+            <input type="List" list="Mascotas">
+            <datalist id="Mascotas">
+                <option value="Perro">Perro</option>
+                <option value="Gato">Gato</option>
+                <option value="Hasmter">Hasmter</option>
+                <option value="Conejo">Conejo</option>
+                <option value="Loro">Loro</option>
+                <option value="Canario">Canario</option>
+                <option value="Serpiente">Serpiente</option>
+            </datalist>
+        </div>
+    </form>
 </body>
 </html>
