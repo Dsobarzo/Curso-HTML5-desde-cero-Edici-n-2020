@@ -10,6 +10,17 @@
        DPR = pixeles reales / pixeles disponibles
     -->
 </head>
+<style>
+    video{
+        max-width: 100%;
+    }
+    img{
+        max-width: 100%;
+    }
+    picture{
+        max-width: 100%;
+    }
+</style>
 <body>
     <h1>Imagenes</h1>
     <img src="/Seccion_10-Contenido-Embebido/assets/images/gif.gif">
@@ -21,6 +32,41 @@
     /Seccion_10-Contenido-Embebido/assets/images/800px.jpg,  
     /Seccion_10-Contenido-Embebido/assets/images/300px.jpg" 2x>
 
+    <h1>Etiqueta Picture</h1>
+    <picture>
+        <source srcset="
+        /Seccion_10-Contenido-Embebido/assets/images/800px.jpg,  
+        /Seccion_10-Contenido-Embebido/assets/images/300px.jpg">
+        <img src="/Seccion_10-Contenido-Embebido/assets/images/800px.jpg" alt=""> 
 
+        <source srcset="/Seccion_10-Contenido-Embebido/assets/images/800px.jpg" media="(max-width: 1200px)">
+            <img src="/Seccion_10-Contenido-Embebido/assets/images/300px.jpg" alt=""> 
+    </picture>
+
+    <h1>Audios</h1>
+
+    <audio src="/Seccion_10-Contenido-Embebido/assets/audio/audio.mp3" controls></audio>
+
+    <h1>Video</h1>
+
+    <video src="/Seccion_10-Contenido-Embebido/assets/video/video.mp4" controls poster="/Seccion_10-Contenido-Embebido/assets/images/jpeg.jpg"></video>
+
+   <h1>Iframe</h1>
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/ZPKpg093940" 
+   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+   gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Figure</h1>
+    <h2>Manzana</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Unde voluptatum repudiandae accusantium? Nulla molestiae commodi provident et porro. 
+        Rerum quas enim vitae doloremque accusamus nam accusantium ducimus odit rem eum.</p>
+        <figure>
+            <img src="/Seccion_10-Contenido-Embebido/assets/images/jpeg.jpg" alt="Manzana pintada">
+        </figure>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ab aliquid non vel officia tempora minima assumenda incidunt dolorum laborum aperiam ratione, 
+        sequi impedit obcaecati cupiditate voluptatibus eaque voluptatum veritatis dolores.</p>
 </body>
 </html>
